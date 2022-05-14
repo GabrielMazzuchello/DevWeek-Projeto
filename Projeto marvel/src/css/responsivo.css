@@ -16,9 +16,28 @@
 @media (max-width: 767px){
     body::before{
         background-image: url(../imagens/bg-mobile.jpg);
-        background: no-repeat;
+        background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
         opacity: 1;
     }
+    main{
+        padding: 0 5px;
+        justify-content: start;
+    }
+    .cabecalho .titulo{
+        font-size: 22px;
+    }
+    .selecao-de-personagens .personagem-grande{
+        display: none;
+    }
+
+}
+
+@media (max-width: 360px){
+    .cabecalho .titulo{
+        font-size: 19px;
+        -webkit-text-stroke: 1px var(--cor-titulo-forte);
+    }
+
 }
